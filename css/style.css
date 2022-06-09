@@ -18,7 +18,15 @@
         margin-left: 42px;
         margin-bottom: 18px;
         width: 160px;
-        height: 160px;
+        height: 160px;  
+        animation: Movimiento 4s;
+        line-height:150px;
+     }
+      
+     @keyframes Movimiento{
+        0%{transform:translateX(1500px);}
+       50%{transform:translateX(200px)}
+       100%{transform:translateX(0px);}
     }
     nav ul {
         font-size: 0pt;
@@ -284,8 +292,14 @@
         padding: 12px;
         margin-top: 12px;
         box-shadow: 2px 2px 5px #999;
-        -moz-box-shadow: 2px 2px 5px #999;
+        -moz-box-shadow: 2px 2px 5px #999; animation: cambiaColor 4s;
     }
+     
+    @keyframes cambiaColor {
+       0%{ background:rgb(0, 0, 0); }
+       100%{ background: #dfdfe0; }
+    }
+    
     
     .equipo div img{
         border-radius: 30px;
