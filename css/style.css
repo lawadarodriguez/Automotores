@@ -1,5 +1,5 @@
 
-    body{
+   body{
         position: absolute;
         width: 100%;
     }
@@ -11,6 +11,7 @@
         margin-top: -5px;
         box-shadow: 2px 2px 5px #999;
         -moz-box-shadow: 2px 2px 5px #999;
+
     }
     
     .logo{
@@ -80,7 +81,7 @@
         background-size:cover;
         width: 100%;
         height: 700px;
-        margin-top: -3.9%;
+        margin-top: -3px;
         box-shadow: 6px 6px 5px #999;
         -moz-box-shadow: 6px 6px 5px #999;
     }
@@ -127,23 +128,26 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 200px 200px 200px 200px; 
-        grid-template-rows: 520px 520px; 
+        grid-template-rows: 420px 520px; 
         grid-column-gap: 50px;
         grid-row-gap: 15px;
     }
-    .grid div {
-        background-color:rgb(185, 185, 185);
-        color: rgb(0, 0, 0);
+    .card {
+        background-color: rgb(192, 188, 188);
+        box-shadow: 2px 2px 5px #999;
+        -moz-box-shadow: 2px 2px 5px #999;
         border-radius: 10px;
         padding: 12px;
         margin-top: 12px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        box-shadow: 2px 2px 5px #999;
-        -moz-box-shadow: 2px 2px 5px #999;
+
+    }
+    .card-text {
+        text-align: left;
     }
     .grid div img {
+        
         border-radius: 10px;
-        margin-bottom: 8px;
     }
     .grid div p{
         margin-top: 7px;
@@ -153,24 +157,7 @@
     .grid div p b {
         font-size: 16pt;
     }
-    .grid div form button{
-    
-        display: block;
-        width: 100px;
-        height: 40px;
-        background-color: rgb(126, 124, 124);
-        border-color: rgb(199, 196, 196);
-        color: rgb(236, 236, 236, 0.89);
-        border-radius: 10px;
-        border: 0ch;
-        margin-top: 10px;
-        margin-left: 40px;
-    }
-    .grid div form button a {
-        text-decoration: none;
-        color: rgba(255, 250, 250, 0.89);
-    }
-    
+
     .grid form button {
         display: block;
         width: 150px;
@@ -197,7 +184,9 @@
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 30pt;
     }
-    
+    .nuestrosclientes{
+        margin-top: -220px;
+    }
     h3 {
         display: block;
         margin-top: 150px;
@@ -369,9 +358,11 @@
         margin-top: 12px;
     }
     
-    .losvehiculos div img {
+    .card-img-top {
         border-radius: 10px;
         margin-bottom: 2px;
+        width: 190px;
+        margin-left: -15px;
     }
     
     .losvehiculos div p {
@@ -382,22 +373,24 @@
     .losvehiculos div p b{
         font-size: 16pt;
     }
-    .losvehiculos div form button{
+    .card-body  button{
         display: block;
         width: 100px;
-        height: 40px;
+        height: 30px;
         background-color: rgb(126, 124, 124);
         border-color: rgb(199, 196, 196);
         color: rgb(236, 236, 236, 0.89);
         border-radius: 10px;
         border: 0ch;
-        margin-top: 10px;
-        margin-left: 35px;
+        margin-top: 12px;
+        margin-left: 28px;
+        font-size: 10pt;
     }
-    .losvehiculos div form button a {
+    .card-body button a {
         text-decoration: none;
         color: rgba(255, 250, 250, 0.89);
     }
+
     
     .losvehiculos form button {
         display: block;
@@ -765,10 +758,10 @@
         flex-direction: row;
         position: relative;
         margin-top: -10px;
-        margin-left: -10px;
-        margin-right: -10px;
         box-shadow: 2px 2px 5px #999;
         -moz-box-shadow: 2px 2px 5px #999;
+        margin-left: -10px;
+        
     }
     
     .logo{
@@ -791,7 +784,6 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 6pt;
         margin-left: 30px;
-        margin-right: 0px;
         margin-top: 5px;
         color:rgb(126, 124, 124);
         align-items: center;
@@ -886,19 +878,17 @@
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size:cover;
-        width: 150%;
+        width: 480px;
         height: 250px;
-        margin-top: -50px;
-        margin-left: -10px;
         box-shadow: 6px 6px 5px #999;
         -moz-box-shadow: 6px 6px 5px #999;
     }
     .slogan h1 {
         display: flex;
-        margin-top: 30px;
+        margin-top: 8px;
         margin-left: 12px;
         padding-top: 10%;
-        font-size: 10pt;
+        font-size: 12pt;
         font-family: Arial, Helvetica, sans-serif;
     }
     
@@ -908,7 +898,7 @@
         margin-top: 0%;
         width: 32%;
         text-align: left;
-        font-size: 6pt;
+        font-size: 8pt;
     }
     
     .destacados {
@@ -923,9 +913,8 @@
         border-color: rgb(199, 196, 196);
         color: rgb(236, 236, 236, 0.89);
         border-radius: 10px;
-        margin-top: 3px;
         margin-left: 10px;
-        font-size: 5pt;
+        font-size: 6pt;
     }
     
     .slogan form button a {
@@ -938,65 +927,24 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 200px; 
-        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px; 
+        grid-template-rows: 430px 430px 430px 430px 300px 300px 300px 300px; 
         grid-column-gap: 50px;
         grid-row-gap: 15px;
     }
     .grid div {
-        background-color:rgb(185, 185, 185);
         color: rgb(0, 0, 0);
         border-radius: 10px;
-        padding: 12px;
-        margin-top: 12px;
+        padding: 10px;
+        margin-top: 8px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        box-shadow: 2px 2px 5px #999;
-        -moz-box-shadow: 2px 2px 5px #999;
     }
     .grid div img {
         border-radius: 10px;
-        margin-bottom: 4px;
-    }
-    .grid div p{
-        margin-top: 7px;
-        font-size: 6pt;
+        margin-bottom: 1px;
     }
     
-    .grid div p b {
-        font-size: 10pt;
-    }
-    .grid div form button{
-    
-        display: block;
-        width: 70px;
-        height: 20px;
-        background-color: rgb(126, 124, 124);
-        border-color: rgb(199, 196, 196);
-        color: rgb(236, 236, 236, 0.89);
-        border-radius: 10px;
-        border: 0ch;
-        margin-top: 10px;
-        margin-left: 50px;
-        font-size: 8pt;
-    }
-    .grid div form button a {
-        text-decoration: none;
-        color: rgba(255, 250, 250, 0.89);
-    }
-    
-    .grid form button {
-        display: block;
-        width: 90px;
-        height: 30px;
-        background-color:  rgb(126, 124, 124);
-        border-color: rgb(199, 196, 196);
-        color: rgb(236, 236, 236, 0.89);
-        border-radius: 10px;
-        border: 0ch;
-        margin-top: 30px;
-        margin-left: 56px;
-        margin-bottom: -10px;
-
-        font-size: 10pt; 
+    .card-text {
+        text-align: left;
     }
     .grid form button a {
         text-decoration: none;
@@ -1005,14 +953,16 @@
     
     h2 {
         display: block;
-        margin-top: 70px;
+        margin-top: 20px;
         text-align: center;
         color: rgb(126, 124, 124);
         margin-bottom: 30px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 12pt;
+        font-size: 14pt;
     }
-    
+    .nuestrosclientes{
+        margin-top: -1100px;
+    }
     h3 {
         display: block;
         margin-top: 80px;
@@ -1058,7 +1008,7 @@
         grid-row-gap: 15px;
         margin: 30px;
     }
-    
+
     .nosotros div p{
         display: block;
         margin-top: 20px;
@@ -1168,7 +1118,7 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 120px 120px; 
-        grid-template-rows: 420px 420px 420px 420px; 
+        grid-template-rows: 390px 390px 390px 390px; 
         grid-column-gap: 20px;
         grid-row-gap: 15px;
     }
@@ -1177,15 +1127,16 @@
         background-color:rgb(185, 185, 185);
         color: rgb(0, 0, 0);
         border-radius: 10px;
-        padding: 10px;
+        padding: 8px;
         margin-top: 12px;
-        margin-left: -10px;
+        margin-left: -8px;
     }
     
     .losvehiculos div img {
         border-radius: 10px;
         margin-bottom: 2px;
-        width: 110px;
+        margin-left: 9px;
+        width: 100px;
         height: 120px;
     }
     
@@ -1197,7 +1148,7 @@
     .losvehiculos div p b{
         font-size: 10pt;
     }
-    .losvehiculos div form button{
+    .card-body  button{
         display: block;
         width: 80px;
         height: 30px;
@@ -1210,7 +1161,7 @@
         margin-left: 15px;
         font-size: 8pt;
     }
-    .losvehiculos div form button a {
+    .card-body button a {
         text-decoration: none;
         color: rgba(255, 250, 250, 0.89);
     }
