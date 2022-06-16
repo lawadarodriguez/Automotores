@@ -34,7 +34,7 @@
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         margin-top: 40px;
-        margin-left: 350px;
+        margin-left: 250px;
         
     }
     nav ul li {
@@ -127,10 +127,11 @@
     .grid {
         display: grid;
         justify-content: center;
-        grid-template-columns: 200px 200px 200px 200px; 
-        grid-template-rows: 420px 520px; 
+        grid-template-columns: 220px 220px 220px 220px; 
+        grid-template-rows: 630px 630px; 
         grid-column-gap: 50px;
         grid-row-gap: 15px;
+        margin-bottom: -470px;
     }
     .card {
         background-color: rgb(192, 188, 188);
@@ -144,13 +145,14 @@
     }
     .card-text {
         text-align: left;
+        margin-top: 22px;
     }
     .grid div img {
-        
-        border-radius: 10px;
+        margin-bottom: 20px;
+        border-radius: 6px;
     }
     .grid div p{
-        margin-top: 7px;
+        margin-top: 12px;
         font-size: 12pt;
     }
     
@@ -168,7 +170,7 @@
         border-radius: 10px;
         border: 0ch;
         margin-top: 100px;
-        margin-left: 410px;
+        margin-left: 430px;
     }
     .grid form button a {
         text-decoration: none;
@@ -177,7 +179,7 @@
     
     h2 {
         display: block;
-        margin-top: 150px;
+        margin-top: 100px;
         text-align: center;
         color: rgb(126, 124, 124);
         margin-bottom: 80px;
@@ -185,11 +187,10 @@
         font-size: 30pt;
     }
     .nuestrosclientes{
-        margin-top: -220px;
+        margin-top: -150px;
     }
     h3 {
         display: block;
-        margin-top: 150px;
         text-align: center;
         color: rgb(126, 124, 124);
     }
@@ -198,25 +199,18 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 400px 400px; 
-        grid-template-rows: 200px 200px 200px 200px; 
-        grid-column-gap: 50px;
-        grid-row-gap: 50px;
+        grid-template-rows: 220px 220px 220px 220px; 
+        grid-column-gap: -30px;
+        margin-bottom: -500px;
+        margin-left: 80px;
     }
     
-    .reseñas div{
-        background-color: rgb(185, 185, 185);
-        border-radius: 15px;
-        margin-bottom: -15px;
-        box-shadow: 2px 2px 5px #999;
-        -moz-box-shadow: 2px 2px 5px #999;
-    }
     
     .reseñas div p{
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 14px;
-        text-align: center;
-        margin-top: 50px;
-        color: rgb(36, 36, 35);
+        margin-top: 20px;
+        color: aliceblue;
     }
     
     
@@ -268,20 +262,17 @@
     .equipo{
         display: grid;
         justify-content: center;
-        grid-template-columns: 300px 300px 300px ; 
-        grid-template-rows: 350px; 
-        grid-column-gap: 50px;
+        grid-template-columns: 250px 250px 250px ; 
+        grid-template-rows: 320px; 
+        grid-column-gap: 100px;
         grid-row-gap: 15px;
         margin-top: 50px;
     }
-    .equipo div{
-        background-color:rgb(185, 185, 185);
-        color: rgb(0, 0, 0);
-        border-radius: 50px;
-        padding: 12px;
-        margin-top: 12px;
-        box-shadow: 2px 2px 5px #999;
-        -moz-box-shadow: 2px 2px 5px #999; animation: cambiaColor 4s;
+    .equipo div div h5{
+        text-align: center;
+    }
+    .equipo div img{
+        justify-content: center;
     }
      
     @keyframes cambiaColor {
@@ -292,11 +283,12 @@
     
     .equipo div img{
         border-radius: 30px;
-        margin-left: 30px;
+        margin-left: 50px;
     }
     
     .equipo div p{
         margin-top: 20px;
+        text-align: center;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .equipo div p b{
@@ -760,8 +752,6 @@
         margin-top: -10px;
         box-shadow: 2px 2px 5px #999;
         -moz-box-shadow: 2px 2px 5px #999;
-        margin-left: -10px;
-        
     }
     
     .logo{
@@ -776,6 +766,7 @@
         font-weight: bold;
         margin-top: 60px;
         margin-left: 20px;
+
         
     }
     nav ul li {
@@ -819,15 +810,13 @@
 
     footer {
         background-color: rgba(236, 236, 236, 0.89);
-        margin-right: -80px;
-        position: absolute;
+        position:relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 125%;
-        margin-top: 10%;
-        margin-left: -8px;
+        margin-left: -10px;
     }
     
     
@@ -927,7 +916,7 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 200px; 
-        grid-template-rows: 430px 430px 430px 430px 300px 300px 300px 300px; 
+        grid-template-rows: 630px 630px 630px 630px; 
         grid-column-gap: 50px;
         grid-row-gap: 15px;
     }
@@ -940,11 +929,23 @@
     }
     .grid div img {
         border-radius: 10px;
-        margin-bottom: 1px;
+        margin-bottom: 10px;
     }
     
     .card-text {
         text-align: left;
+    }
+    .grid form button {
+        display: block;
+        width: 150px;
+        height: 50px;
+        background-color:  rgb(126, 124, 124);
+        border-color: rgb(199, 196, 196);
+        color: rgb(236, 236, 236, 0.89);
+        border-radius: 10px;
+        border: 0ch;
+        margin-top: 100px;
+        margin-left: 25px;
     }
     .grid form button a {
         text-decoration: none;
@@ -960,12 +961,9 @@
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 14pt;
     }
-    .nuestrosclientes{
-        margin-top: -1100px;
-    }
+
     h3 {
         display: block;
-        margin-top: 80px;
         text-align: center;
         color: rgb(126, 124, 124);
     }
@@ -974,19 +972,14 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 200px; 
-        grid-template-rows: 150px 150px 150px 150px 150px 150px; 
-        grid-column-gap: 50px;
-        grid-row-gap: 50px;
+        grid-template-rows: 250px 250px 250px 250px 150px 150px; 
+        grid-row-gap: 10px;
+        margin-top: 550px;
+        margin-bottom: 2px;
+        margin-left: 12px;
     }
     
-    .reseñas div{
-        background-color: rgb(185, 185, 185);
-        border-radius: 15px;
-        margin-bottom: -15px;
-        box-shadow: 2px 2px 5px #999;
-        -moz-box-shadow: 2px 2px 5px #999;
-    }
-    
+
     .reseñas div p{
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 10px;
@@ -1045,25 +1038,19 @@
     .equipo{
         display: grid;
         justify-content: center;
-        grid-template-columns: 280px ; 
-        grid-template-rows: 230px 230px 230px; 
+        grid-template-columns: 240px ; 
+        grid-template-rows: 250px 250px 250px; 
         grid-column-gap: 50px;
         grid-row-gap: 15px;
         margin-top: 40px;
+        margin-bottom: 15px;
+        margin-left: -70px;
     }
-    .equipo div{
-        background-color:rgb(185, 185, 185);
-        color: rgb(0, 0, 0);
-        border-radius: 50px;
-        padding: 12px;
-        margin-top: 12px;
-        box-shadow: 2px 2px 5px #999;
-        -moz-box-shadow: 2px 2px 5px #999;
-    }
+
     
     .equipo div img{
         border-radius: 30px;
-        margin-left: 20px;
+        margin-left: 50px;
     }
     
     .equipo div p{
