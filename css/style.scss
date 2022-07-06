@@ -115,31 +115,27 @@ nav ul li a {
 }
 .slogan h1 {
     display: flex;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 2%;
+    margin-left: 4%;
     padding-top: 10%;
-    font-size: 30pt;
+    font-size: 150%;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.slogan p {
+  }
+  
+  .slogan p {
     display: flex;
-    margin-left: 50px;
+    margin-left: 4%;
     margin-top: 0%;
     width: 32%;
     text-align: left;
-    font-size: 16pt;
+    font-size: 110%;
+  }
+  
+.destacados {
+    font-size: 170%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.destacados {
-  font-size: 30pt;  
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  display: block;
-  margin-top: 100px;
-  text-align: center;
-  color: map-get($mapaColores,2);
-  margin-bottom: 80px;
-}
 .slogan form button {
     @include boton(100px,40px,10px,50px);
     display: block;
@@ -153,40 +149,47 @@ nav ul li a {
     color: map-get($mapaColores,4);
 }
 
+
 .grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: 220px 220px 220px 220px; 
-    grid-template-rows: 630px 630px; 
-    grid-column-gap: 50px;
-    grid-row-gap: 15px;
-    margin-bottom: -470px;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-rows: 80%;
+    grid-column-gap: 2%;
+    grid-row-gap: 1%;
+    margin-top: 5%;
 }
-.card {
-    background-color:map-get($mapaColores,2);
-    box-shadow: map-get($mapaColores,2);
-    -moz-box-shadow: map-get($mapaColores,2);
-    border-radius: 10px;
-    padding: 12px;
-    margin-top: 12px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-}
+.card {
+    background-color: rgb(192, 188, 188);
+    box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    border-radius: 10px;
+    padding: 5%;
+    margin-top: 1%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-bottom: 1%;
+  }
+  
 .card-text {
     text-align: left;
-    margin-top: 22px;
+    margin-top: 3%;
 }
+  
 .grid div img {
-    margin-bottom: 20px;
+    margin-bottom: 7%;
     border-radius: 6px;
+    width: 100%;
+    margin-left: 2%;
 }
-.grid div p{
-    margin-top: 12px;
-    font-size: 12pt;
+  
+.grid div p {
+    margin-top: 7%;
+    font-size: 90%;
 }
-
+  
 .grid div p b {
-    font-size: 16pt;
+    font-size: 110%;
 }
 
 .grid form button {
@@ -196,7 +199,6 @@ nav ul li a {
     border-color: map-get($mapaColores,1);
     color: map-get($mapaColores,4);
     border: 0ch;
-    margin-bottom: 200px;
 }
 .grid form button a {
     text-decoration: none;
@@ -205,7 +207,7 @@ nav ul li a {
 
 .nuestrosclientes{
     @extend .destacados;
-    margin: 100px;
+    margin-top: 8%;
 }
 
 h3 {
@@ -217,19 +219,20 @@ h3 {
 .reseñas{
     display: grid;
     justify-content: center;
-    grid-template-columns: 400px 400px; 
-    grid-template-rows: 220px 220px 220px 220px; 
-    grid-column-gap: -30px;
-    margin-bottom: -500px;
-    margin-left: 80px;
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 50% 50% ;
+    grid-column-gap: -300%;
+    grid-row: -300%;
+    margin-top: 5%;
+    margin-left: 6%;
 }
 
 
 .reseñas div p{
-    font-family:$fontprimaria;
-    font-size: 14px;
-    margin-top: 20px;
-    color: map-get($mapaColores,4);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 95%;
+    margin-top: 4%;
+    color: aliceblue;
 }
 
 
@@ -238,51 +241,51 @@ h3 {
 
 .nosotros div{
     display: grid;
-    justify-items: stretch;
-    grid-template-columns: 600px 600px; 
-    grid-template-rows: 400px; 
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    margin: 30px;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60%;
+    grid-column-gap: 2%;
+    margin-left: 3%;
     p{
         display: block;
-        margin-top: 100px;
-        margin-right: 50px;
+        margin-top: 10%;
         text-align: left;
         color: rgb(100, 99, 99);
         line-height: 25pt;
         font-family: $fontprimaria;
         b{
-            font-size: 20pt;
+            font-size: 120%;
         }
     }
 
     img {
         display: block;
         justify-items: center;
-        margin-top: 80px;
+        margin-top: 10%;
+        width: 80%;
+        height: 140%;
     }
 }
+
 p{
     display: block;
-    margin-top: 100px;
-    margin-right: 0px;
+    margin-top: 10%;
     text-align: center;
     color: rgb(75, 74, 74);
     font-family: $fontprimaria;
     b{
-        font-size: 20pt;
+        font-size: 120%;
     }
 }
 
 .equipo{
     display: grid;
     justify-content: center;
-    grid-template-columns: 250px 250px 250px ; 
-    grid-template-rows: 320px; 
-    grid-column-gap: 100px;
-    grid-row-gap: 15px;
-    margin-top: 50px;
+    grid-template-columns: 22% 22% 22%;
+    grid-template-rows: 100%;
+    grid-column-gap: 5%;
+    grid-row-gap: 1%;
+    margin-top: 4%;
     div {
      div h5{
             text-align: center;
@@ -290,14 +293,14 @@ p{
      img{
         justify-content: center;
         border-radius: 30px;
-        margin-left: 50px;
+        margin-left: 20%;
         }
       p{
-            margin-top: 20px;
+        margin-top: 4%;
             text-align: center;
             font-family:$fontprimaria;
             b{
-                font-size: 14pt;
+                font-size: 100%;
             }
         } 
     }   
@@ -312,15 +315,15 @@ p{
 
 .contactate button{
     display: block;
-    width: 150px;
-    height: 50px;
+    width: 10%;
+    height: 60%;
     background-color:  rgb(126, 124, 124);
     border-color: rgb(199, 196, 196);
     color: rgb(236, 236, 236, 0.89);
     border-radius: 10px;
     border: 0ch;
-    margin-left: 600px;
-    margin-top: 50px;
+    margin-left: 45%;
+    margin-top: 7%;
     a {
         text-decoration: none;
         color: rgba(255, 250, 250, 0.89);
@@ -335,67 +338,66 @@ p{
 
 .nuestrosvehiculos {
     display: block;
-    margin-top: 90px;
-    margin-bottom: 40px;
+    margin-top: 4%;
     text-align: center;
     color: rgb(126, 124, 124);
 }
 .nuestrosvehiculos div p{
-    margin-top: 100px;
-    margin-right: 50px;
+    margin-top: 4%;
     text-align: center;
     color: rgb(100, 99, 99);
     line-height: 25pt;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nuestrosvehiculos div p b{
-    font-size: 20pt;
+    font-size: 170%;
 }
 
 .losvehiculos {
     display: grid;
     justify-content: center;
-    grid-template-columns: 200px 200px 200px 200px; 
-    grid-template-rows: 450px 450px; 
-    grid-column-gap: 50px;
-    grid-row-gap: 15px;
+    grid-template-columns: 15% 15% 15% 15%;
+    grid-template-rows: 47% 47%;
+    grid-column-gap: 3%;
+    grid-row-gap: 3% ;
 }
 
 .losvehiculos div {
     background-color:rgb(185, 185, 185);
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    padding: 10px;
-    margin-top: 12px;
+    padding: 6%;
+    margin-top: 2%;
 }
 
 .card-img-top {
     border-radius: 10px;
-    margin-bottom: 2px;
-    width: 190px;
-    margin-left: -15px;
+    margin-bottom: 1%;
+    width: 110%;
+    margin-right: 1%;
+    margin-left: -2%;
 }
 
 .losvehiculos div p {
-    margin-top: 10px;
-    font-size: 10.5pt;
+    margin-top: 1%;
+    font-size: 80%;
 }
 
 .losvehiculos div p b{
-    font-size: 16pt;
+    font-size: 130%;
 }
 .card-body  button{
     display: block;
-    width: 100px;
+    width: 60%;
     height: 30px;
-    background-color: rgb(126, 124, 124);
+    background-color:#0d6efd;
     border-color: rgb(199, 196, 196);
-    color: rgb(236, 236, 236, 0.89);
+    color: rgba(236, 236, 236, 0.89);
     border-radius: 10px;
     border: 0ch;
-    margin-top: 12px;
-    margin-left: 28px;
-    font-size: 10pt;
+    margin-left: 4%;
+    margin-top: 10%;
+    font-size: 90%;
 }
 .card-body button a {
     text-decoration: none;
@@ -405,15 +407,15 @@ p{
 
 .losvehiculos form button {
     display: block;
-    width: 150px;
-    height: 50px;
-    background-color:  rgb(126, 124, 124);
+    width: 60%;
+    height: 80%;
+    background-color:#0d6efd;
     border-color: rgb(199, 196, 196);
-    color: rgb(236, 236, 236, 0.89);
+    color: rgba(236, 236, 236, 0.89);
     border-radius: 10px;
     border: 0ch;
-    margin-left: 410px;
-    margin-top: 70px;
+    margin-left: 200%;
+    margin-top: 15%;
 }
 .losvehiculos form button a {
     text-decoration: none;
@@ -423,28 +425,28 @@ p{
 /* PRODUCTO */
 
 .producto{
-    margin-top: 100px;
-    margin-right: 50px;
+    margin-top: 8%;
+    margin-bottom: 3%;
     text-align: center;
     color: rgb(100, 99, 99);
     line-height: 25pt;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .producto b{
-    font-size: 20pt;
+    font-size: 170%;
 }
 
 .elproducto{
+    width: 90%;
+    height: 210%;
     display: grid;
-    grid-template-areas:
-    "galeria info" 
-    "descripción info";
+    grid-template-areas: "galeria info" "descripción info";
     justify-content: center;
-    margin: auto;
-    background-color:rgb(185, 185, 185);
+    background-color: rgb(185, 185, 185);
     border-radius: 20px;
-    width:90%;
-    height: 90%;
+    margin-bottom: 5%;
+    margin-left: 4%;
+    padding: 1%;
 }
 .galeria{
     grid-area: galeria;
@@ -455,11 +457,13 @@ p{
     display:inline-block;
     margin: auto;
     display: block;
-    margin-top: 50px;
+    margin-top: 1%;
     border-radius: 20px;
-    background-color:rgb(185, 185, 185);
-    --w:700px;
-    --h:600px;
+    background-color: rgb(185, 185, 185);
+    --w:50%;
+    --h:20%;
+    margin-left: 1%;
+    padding: 5%;
 }
       
 .galeria img {
@@ -502,44 +506,34 @@ p{
 
 .descripción{
     margin: auto;
-    margin-left: 100px;
-    margin-top: 50px;
-    margin-right: 50px;
-    width: 150;
+    margin-left: 50%;
+    margin-top: 1%;
+    margin-right: 50%;
+    width: 50%;
+    margin-bottom: 5%;
 }
 .descripción fieldset{
     background-color: #999;
 }
 .descripción fieldset p{
-    font-size: 12pt;
+    font-size: 90%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .descripción fieldset p b{
-    font-size: 20pt;
-}
-.info{
-    margin: auto;
-    display: block;
-    margin-left: 90px;
-    margin-top:-175px;
-    margin-bottom: 50px;
-    margin-right: 90px;
-    font-size: 14pt;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 180%;
 }
 
 /* FINANCIACIÓN */
 
 .financiacion div{
     display: block;
-    grid-row-gap: 15px;
-    margin: 30px;
+    grid-row-gap: 4%;
+    margin: 5%;
 }
 
 .financiacion div p{
     display: block;
-    margin-top: 100px;
-    margin-right: 50px;
+    margin-top: 8%;
     text-align: left;
     color: rgb(100, 99, 99);
     line-height: 25pt;
@@ -547,13 +541,13 @@ p{
 
 }
 .financiacion div p b{
-    font-size: 20pt;
+    font-size: 170%;
 }
 
 .creditobancor{
     display: grid;
-    margin-left:30px;
-    margin-top: 50px;
+    margin-left: 10%;
+    margin-top: 6%;
     text-align: center;
 }
 
@@ -561,68 +555,66 @@ p{
     background-color:rgb(185, 185, 185);
     color: rgb(0, 0, 0);
     border-radius: 50px;
-    padding: 12px;
-    margin-top: 12px;
+    margin-top: 2%;
     box-shadow: 2px 2px 5px #999;
     -moz-box-shadow: 2px 2px 5px #999;
-    width: 92%;
+    width: 82%;
 }
 .creditobancor p{
     display: block;
-    margin-top: 50px;
+    margin-top: 3%;
     text-align: center;
     color: rgb(100, 99, 99);
     line-height: 25pt;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-right: 4%;
 }
 .creditobancor p b{
-    font-size: 20pt;
+    font-size: 150%;
 }
 .creditobancor img{
     border-radius: 50px;
     width: 90%;
 }
 .creditosantander{
-    display: display;
-    grid-row-gap: 15px;
-    margin-left: 30px;
-    margin-top: 50px;
+    display: grid;
+    margin-left: 10%;
+    margin-top: 6%;
     text-align: center;
 }
 .creditosantander div{
-    background-color:rgb(185, 185, 185);
+    background-color: rgb(185, 185, 185);
     color: rgb(0, 0, 0);
     border-radius: 50px;
-    padding: 12px;
-    margin-top: 12px;
+    margin-top: 2%;
     box-shadow: 2px 2px 5px #999;
     -moz-box-shadow: 2px 2px 5px #999;
-    align-content: center;
-    width: 92%;
+    width: 82%;
 }
 .creditosantander p{
     display: block;
-    margin-top: 50px;
+    margin-top: 3%;
     text-align: center;
     color: rgb(100, 99, 99);
     line-height: 25pt;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-right: 4%;
 }
 .creditosantander img{
     border-radius: 50px;
     width: 90%;
 }
 .creditosantander p b{
-    font-size: 20pt;
+    font-size: 150%;
 }
 
 /* CONTACTAR ASESOR*/
 
 aside div{
-    background-color:rgb(241, 238, 238);
-    border-radius: 60px;
-    padding: 12px;
-    margin-top: 90px;
+    background-color: rgb(241, 238, 238);
+    border-radius: 50px;
+    padding: 5%;
+    margin-top: 4%;
     width: 600px;
     height: 1800;
     margin-left: 340px;
@@ -631,9 +623,9 @@ aside div{
 }
 
 aside div form{
-    margin-top: 10px;
+    margin-top: 5%;
     text-align: center;
-    font-size: 12pt;
+    font-size: 140%;
 }
 
 aside div form legend{
@@ -641,23 +633,23 @@ aside div form legend{
     margin-top: 25px;
     text-align: center;
     color: rgb(75, 74, 74);
-    font-size: 20pt;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 120%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 aside div form label{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14pt;
-    color:rgb(75, 74, 74);
-    margin-top: 10px;
+    font-size: 90%;
+    color: rgb(75, 74, 74);
+    margin-top: 2%;
 }
 
 aside div form input{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14pt;
-    margin-top: 10px;
+    font-size: 90%;
+    margin-top: 2%;
     color: rgb(32, 32, 32);
-    background-color:#d4d4d4;
+    background-color: #d4d4d4;
     text-align: left;
     border-radius: 5px;
     border: none;
@@ -665,62 +657,64 @@ aside div form input{
 
 aside div form span{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14pt;
-    margin-top: 10px;
-    color:rgb(75, 74, 74);
+    font-size: 90%;
+    margin-top: 2%;
+    color: rgb(75, 74, 74);
 }
 
 aside div form select{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14pt;
-    margin-top: 10px;
+    font-size: 90%;
+    margin-top: 2%;
     color: rgb(151, 148, 148);
     background-color: #d4d4d4;
 }
 aside div form p{
-    margin-top: -5px;
+    margin-top: 2%;
     text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 14pt;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 90%;
 }
 .escribeaqui {
-    width: 230px;
-    height: 130px;
+    width: 40%;
+    height: 50%;
 }
 .botonenviar{
-    width: 150px;
-    height: 50px;
-    background-color:  rgb(126, 124, 124);
+    width: 20%;
+    height: 100%;
+    background-color: rgb(126, 124, 124);
     border-color: rgb(199, 196, 196);
-    color: rgb(236, 236, 236, 0.89);
+    color: rgba(236, 236, 236, 0.89);
     border-radius: 10px;
     border: 0ch;
-    margin-top: 30px;
+    margin-top: 4%;
     text-align: center;
 }
 .dondeencontrarnos{
     display: block;
-    margin-top: 150px;
+    margin-top: 4%;
     text-align: center;
     color: rgb(75, 74, 74);
-    font-size: 20pt;
+    font-size: 120%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 iframe{
-    margin-left: 380px;
+    margin-left: 30%;
     border: 0;
 }
 
 /* FOOTER */
 footer {
     background-color: rgba(236, 236, 236, 0.89);
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 10%;
+    box-shadow: 2px -2px 4px #999;
+    -moz-box-shadow: 10px -2px 10px #999;
 }
 
 
@@ -736,7 +730,7 @@ footer {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 6%;
     margin-left: 4%;
-    font-size: 14pt;
+    font-size: 100%;
 }
 
 .email {
@@ -745,7 +739,7 @@ footer {
     margin-top: 6%;
     margin-left: 1%;
     margin-right: 4%;
-    font-size: 14pt;
+    font-size: 100%;
 }
 
 
@@ -768,25 +762,16 @@ nav {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-top: -10px;
     box-shadow: 2px 2px 5px #999;
     -moz-box-shadow: 2px 2px 5px #999;
 }
 
-.logo{
-    margin-top: 20px;
-    margin-left: 12px;
-    width: 90px;
-    height: 90px;
-}
 nav ul {
     font-size: 0pt;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-top: 60px;
     margin-left: 20px;
-
-    
 }
 nav ul li {
     width: 25%;
