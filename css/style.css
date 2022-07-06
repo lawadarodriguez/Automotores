@@ -53,7 +53,7 @@ body {
     transform: translateX(0px);
   }
 }
-.row nav ul {
+ nav ul {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-top: 3%;
@@ -61,18 +61,17 @@ body {
   white-space: nowrap;
 }
 
-.row nav ul li {
+nav ul li {
   width: 35%;
   display: inline;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 90%;
   margin-left: 20%;
   margin-right: 1%;
-  color: rgb(126, 124, 124);
   align-items: center;
 }
 
-.row nav ul li a {
+nav ul li a {
   text-decoration: none;
   color: rgb(126, 124, 124);
 }
@@ -80,6 +79,7 @@ body {
 .boton {
   background-color: rgb(126, 124, 124);
   border-color: rgb(238, 236, 236);
+  color: rgba(255, 250, 250, 0.89);
   border-radius: 10px;
   border: 0ch;
   width: 32%;
@@ -251,8 +251,9 @@ h3 {
   justify-items: center;
   grid-template-columns: 50% 50%;
   grid-template-rows: 60%;
-  grid-column-gap: 2%;
-  margin-left: 3%;
+  grid-column-gap: 5%;
+  margin-left: 2%;
+  margin-top: 7%;
 }
 .nosotros div p {
   display: block;
@@ -300,7 +301,8 @@ p b {
 .equipo div img {
   justify-content: center;
   border-radius: 30px;
-  margin-left: 20%;
+  margin-left: 1%;
+  width: 100%;
 }
 .equipo div p {
   margin-top: 4%;
@@ -331,7 +333,7 @@ p b {
 .contactate button {
   display: block;
   width: 10%;
-  height: 60%;
+  height: 60px;
   background-color: #0d6efd;
   border-color: rgb(199, 196, 196);
   color: rgba(255, 253, 253, 0.89);
@@ -408,7 +410,6 @@ p b {
   width: 60%;
   height: 30px;
   background-color:#0d6efd;
-  border-color: rgb(199, 196, 196);
   color: rgba(236, 236, 236, 0.89);
   border-radius: 10px;
   border: 0ch;
@@ -719,8 +720,8 @@ aside div form p {
 }
 
 .botonenviar {
-  width: 20%;
-  height: 100%;
+  width: 25%;
+  height: 40px;
   background-color: rgb(126, 124, 124);
   border-color: rgb(199, 196, 196);
   color: rgba(236, 236, 236, 0.89);
@@ -821,7 +822,7 @@ footer {
     line-height: 150px;
   }
   
-  .row nav ul {
+ nav ul {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-top: 3%;
@@ -829,7 +830,7 @@ footer {
     white-space: nowrap;
   }
   
-  .row nav ul li {
+  nav ul li {
     width: 35%;
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
@@ -840,13 +841,13 @@ footer {
     align-items: center;
   }
   
-  .row nav ul li a {
+  nav ul li a {
     text-decoration: none;
     color: rgb(126, 124, 124);
   }
  
   .boton {
-    background-color: rgb(255, 253, 253);
+    background-color: rgb(126, 124, 124);
     border-color: rgb(238, 236, 236);
     white-space: nowrap;
     border-radius: 10px;
@@ -944,6 +945,7 @@ footer {
   border-radius: 6px;
   width: 100%;
   margin-left: 2%;
+  margin-top: 1%;
 }
 
 .grid div p {
@@ -1113,7 +1115,7 @@ p b {
 .equipo div img {
   justify-content: center;
   border-radius: 30px;
-  margin-left: -5%;
+  margin-top: 5%;
 }
 .equipo div p {
   margin-top: 2%;
@@ -1172,7 +1174,7 @@ p b {
 }
 
 .nuestrosvehiculos div p {
-  margin-top: 4%;
+  margin-top: 2%;
   text-align: center;
   color: rgb(100, 99, 99);
   line-height: 25pt;
@@ -1187,10 +1189,11 @@ p b {
   display: grid;
   justify-content: center;
   grid-template-columns: 75% ;
-  grid-template-rows: 12% 12% 13% 13% 13% 13% 13% 12% ;
+  grid-template-rows: 12% 11% 13% 13% 13% 12% 12% 12% ;
   grid-row-gap: 1% ;
   margin-bottom: 15%;
   margin-left: 5%;
+  overflow: scroll;
 }
 
 .losvehiculos div {
@@ -1205,12 +1208,13 @@ p b {
   width: 110%;
   margin-right: 1%;
   margin-left: -5%;
+  margin-top: -12%;
 }
 
 .card-text {
   font-size: 130%;
   width: 100%;
-  margin-top: 2%;
+  margin-top: -5%;
   margin-left: -2%;
 }
 
@@ -1222,8 +1226,8 @@ p b {
 
 .card-body button {
   display: block;
-  width: 60%;
-  height: 30px;
+  width: 50%;
+  height: 50px;
   background-color:#0d6efd;
   border-color: rgb(199, 196, 196);
   color: rgba(236, 236, 236, 0.89);
@@ -1244,7 +1248,6 @@ p b {
   width: 50%;
   height: 60%;
   background-color:#0d6efd;
-  border-color: rgb(199, 196, 196);
   color: rgba(236, 236, 236, 0.89);
   border-radius: 10px;
   border: 0ch;
@@ -1273,15 +1276,16 @@ p b {
 }
 
 .elproducto {
-  width: 90%;
+  width: 80%;
   height: 210%;
   display: grid;
-  grid-template-areas: "galeria info" "descripción info";
-  justify-content: center;
+  grid-template-columns: 90%;
+  grid-template-rows: 50% 40%;
+  grid-row-gap: 2%;
   background-color: rgb(185, 185, 185);
   border-radius: 20px;
   margin-bottom: 5%;
-  margin-left: 4%;
+  margin-left: 2%;
   padding: 1%;
 
 }
@@ -1291,17 +1295,15 @@ p b {
   height: calc(var(--h) + 3em);
   width: var(--w);
   margin: 1em;
-  position: relative;
   display: inline-block;
-  margin: auto;
   display: block;
   margin-top: 1%;
   border-radius: 20px;
   background-color: rgb(185, 185, 185);
-  --w:50%;
+  --w:80%;
   --h:20%;
-  margin-left: 1%;
-  padding: 5%;
+  margin-left: -100%;
+  padding: 2%;
 }
 
 .galeria img {
@@ -1347,9 +1349,7 @@ p b {
 
 .descripción {
   margin: auto;
-  margin-left: 50%;
   margin-top: 1%;
-  margin-right: 50%;
   width: 50%;
   margin-bottom: 5%;
 }
@@ -1443,8 +1443,8 @@ aside div form p {
 }
 
 .botonenviar {
-  width: 20%;
-  height: 100%;
+  width: 45%;
+  height: 35px;
   background-color: rgb(126, 124, 124);
   border-color: rgb(199, 196, 196);
   color: rgba(236, 236, 236, 0.89);
@@ -1487,16 +1487,16 @@ iframe {
 
 .elproducto {
   width: 90%;
-  height: 100%;
+  height: 210%;
   display: grid;
-  grid-template-columns: 90%;
-  grid-template-rows: 80% 40%;
+  grid-template-areas: "galeria info" "descripción info";
   justify-content: center;
   background-color: rgb(185, 185, 185);
   border-radius: 20px;
   margin-bottom: 5%;
-  margin-left: 6%;
+  margin-left: 5%;
   padding: 1%;
+
 }
 
 .galeria {
@@ -1510,11 +1510,10 @@ iframe {
   display: block;
   margin-top: 1%;
   border-radius: 20px;
-  background-color: rgb(185, 185, 185);
   --w:50%;
   --h:20%;
-  margin-left: 15%;
-  padding: 5%;
+  margin-left: 12%;
+  white-space: nowrap;
 }
 
 .galeria img {
@@ -1528,14 +1527,22 @@ iframe {
   -o-object-fit: contain;
      object-fit: contain;
   justify-content: left;
-  width: 180%;
-  height: 150%;
+  width: 160%;
+  height: 160%;
+  margin-left: 20%;
+}
+.galeria input {
+ margin-top: 100%;
+ background-color: none;
+ margin-left: 25%;
+ white-space: nowrap;
 }
 
 .galeria input[type=radio] {
   position: relative;
-  bottom: calc(-1 * var(--h) - 1em);
-  left: 1.5em;
+  bottom: calc(-1 * var(--h) - 0.5em);
+  left: 1em;
+
 }
 
 .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
@@ -1559,11 +1566,13 @@ iframe {
 }
 
 .descripción {
-  margin-left: -82%;
-  margin-top: 295%;
+  margin: auto;
+  margin-left: -220%;
+  margin-top: 125%;
   margin-right: 50%;
   width: 250%;
   margin-bottom: 5%;
+  text-align: center;
 }
 
 .descripción fieldset {
@@ -1571,12 +1580,12 @@ iframe {
 }
 
 .descripción fieldset p {
-  font-size: 100%;
+  font-size: 120%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .descripción fieldset p b {
-  font-size: 100%;
+  font-size: 120%;
 
 }
 
