@@ -53,7 +53,7 @@ body {
     transform: translateX(0px);
   }
 }
-nav ul {
+.row nav ul {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-top: 3%;
@@ -61,7 +61,7 @@ nav ul {
   white-space: nowrap;
 }
 
-nav ul li {
+.row nav ul li {
   width: 35%;
   display: inline;
   font-family: Arial, Helvetica, sans-serif;
@@ -72,7 +72,7 @@ nav ul li {
   align-items: center;
 }
 
-nav ul li a {
+.row nav ul li a {
   text-decoration: none;
   color: rgb(126, 124, 124);
 }
@@ -732,16 +732,19 @@ aside div form p {
 
 .dondeencontrarnos {
   display: block;
-  margin-top: 4%;
+  margin-top: 10%;
   text-align: center;
   color: rgb(75, 74, 74);
   font-size: 120%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 5%;
 }
 
 iframe {
-  margin-left: 30%;
   border: 0;
+  width: 60%; 
+  height: 155%;
+  margin-left: 23%;
 }
 
 /* FOOTER */
@@ -794,45 +797,62 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-  body{
-      position: absolute;
-      width: 100%;
+  .row nav {
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    height: 25%;
+    width: 100%;
+    border: 0ch;
+    padding: 0%;
+    margin: 0%;
   }
-  .logo{
-    margin-top:3%;
-    margin-left: 1%;
+  
+  .logo {
+    margin-top: 2.5%;
+    margin-left: 5%;
+    width: 18%;
+    height: 22%;
+    -webkit-animation: Movimiento 4s;
+            animation: Movimiento 4s;
+    line-height: 150px;
   }
-  nav ul {
+  
+  .row nav ul {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin-top: 2%;
-    margin-left: -1%;
+    margin-top: 3%;
+    margin-left: -4%;
     white-space: nowrap;
   }
   
-  nav ul li {
-    width: 25%;
+  .row nav ul li {
+    width: 35%;
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40%;
+    font-size: 70%;
     margin-left: 1%;
-    margin-right: 1%;
+    margin-right: 2%;
     color: rgb(126, 124, 124);
     align-items: center;
   }
   
-  nav ul li a {
+  .row nav ul li a {
     text-decoration: none;
     color: rgb(126, 124, 124);
   }
-  
+ 
   .boton {
-    background-color: rgb(126, 124, 124);
+    background-color: rgb(255, 253, 253);
     border-color: rgb(238, 236, 236);
-    border-radius: 20px;
+    white-space: nowrap;
+    border-radius: 10px;
     border: 0ch;
     width: 30%;
-    height: 80%;
+    height: 110%;
     text-overflow: ellipsis;
     overflow: unset;
     font-size: 80%;
@@ -842,691 +862,722 @@ footer {
     text-decoration: none;
     color: rgba(255, 250, 250, 0.89);
   }
-  
-  
-  footer {
-    background-color: rgba(236, 236, 236, 0.89);
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 10%;
-    box-shadow: 2px -2px 4px #999;
-    -moz-box-shadow: 10px -2px 10px #999;
+/* INDEX */
+.slogan {
+  background-image: url(https://fotos.perfil.com/2020/01/08/trim/1280/720/con-el-vision-s-sony-incursiona-en-el-mundo-de-los-autos-853254.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  box-shadow: 6px 6px 5px #999;
+  -moz-box-shadow: 6px 6px 5px #999;
 }
 
+.slogan h1 {
+  display: flex;
+  margin-top: 2%;
+  margin-left: 4%;
+  padding-top: 10%;
+  font-size: 150%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slogan p {
+  display: flex;
+  margin-left: 4%;
+  margin-top: 0%;
+  width: 75%;
+  text-align: left;
+  font-size: 110%;
+}
+
+.destacados {
+  font-size: 170%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.slogan form button {
+  display: block;
+  width: 22%;
+  height: 190%;
+  background-color: rgb(126, 124, 124);
+  border-color: rgb(199, 196, 196);
+  color: rgba(236, 236, 236, 0.89);
+  border-radius: 10px;
+  margin-left: 4%;
+}
+
+.slogan form button a {
+  text-decoration: none;
+  color: rgba(255, 250, 250, 0.89);
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 75%;
+  grid-template-rows: 23% 23% 23% 23% ;
+  grid-row-gap: 1%;
+  margin-top: 5%;
+}
+
+.card {
+  background-color: rgb(192, 188, 188);
+  box-shadow: 2px 2px 5px #999;
+  -moz-box-shadow: 2px 2px 5px #999;
+  border-radius: 10px;
+  padding: 5%;
+  margin-top: 1%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 1%;
+}
+
+.card-text {
+  text-align: left;
+  margin-top: 3%;
+}
+
+.grid div img {
+  margin-bottom: 7%;
+  border-radius: 6px;
+  width: 100%;
+  margin-left: 2%;
+}
+
+.grid div p {
+  margin-top: 7%;
+  font-size: 90%;
+}
+
+.grid div p b {
+  font-size: 110%;
+}
+
+.grid form button {
+  display: block;
+  width: 52%;
+  height: 30%;
+  background-color: #0d6efd;
+  border-color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.89);
+  border-radius: 10px;
+  border: 0ch;
+  margin-top: 38%;
+  margin-left: 185%;
+}
+
+.grid form button a {
+  text-decoration: none;
+  color: rgba(255, 250, 250, 0.89);
+}
+
+h2 {
+  display: block;
+  margin-top: 10%;
+  text-align: center;
+  color: rgb(126, 124, 124);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 170%;
+}
+
+.nuestrosclientes {
+  margin-top: 2%;
+}
+
+h3 {
+  display: block;
+  text-align: center;
+  color: rgb(126, 124, 124);
+  font-size: 170%;
+}
+
+.reseñas {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 75%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-column-gap: -300%;
+  grid-row: -300%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.reseñas div p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 95%;
+  margin-top: 4%;
+  color: aliceblue;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(236, 236, 236, 0.89);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10%;
+  box-shadow: 2px -2px 4px #999;
+  -moz-box-shadow: 10px -2px 10px #999;
+}
 
 .ubicacion {
-    display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 6%;
-    margin-left: 4%;
-    font-size: 14pt;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 6%;
+  margin-left: 11%;
+  font-size: 70%;
+  width: 20%;
 }
+
 .horarios {
-    display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 6%;
-    margin-left: 4%;
-    font-size: 100%;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 6%;
+  margin-left: 5%;
+  font-size: 70%;
+  width: 20%;
 }
 
 .email {
-    display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 6%;
-    margin-left: 1%;
-    margin-right: 4%;
-    font-size: 100%;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 6%;
+  margin-left: 4%;
+  font-size: 70%;
 }
 
-  /* INDEX */
-  .slogan {
-    background-image: url(https://fotos.perfil.com/2020/01/08/trim/1280/720/con-el-vision-s-sony-incursiona-en-el-mundo-de-los-autos-853254.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-    box-shadow: 6px 6px 5px #999;
-    -moz-box-shadow: 6px 6px 5px #999;
-  }
-  
-  .slogan h1 {
-    display: flex;
-    margin-top: 2%;
-    margin-left: 4%;
-    padding-top: 10%;
-    font-size: 150%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .slogan p {
-    display: flex;
-    margin-left: 4%;
-    margin-top: 0%;
-    width: 32%;
-    text-align: left;
-    font-size: 110%;
-  }
-  
-  .destacados {
-    font-size: 170%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  
-  .slogan form button {
-    display: block;
-    width: 12%;
-    height: 180%;
-    background-color: rgb(126, 124, 124);
-    border-color: rgb(199, 196, 196);
-    color: rgba(236, 236, 236, 0.89);
-    border-radius: 10px;
-    margin-top: 1%;
-    margin-left: 4%;
-  }
-  
-  .slogan form button a {
-    text-decoration: none;
-    color: rgba(255, 250, 250, 0.89);
-  }
-  
-  .grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 22% 22% 22% 22%;
-    grid-template-rows: 80%;
-    grid-column-gap: 2%;
-    grid-row-gap: 1%;
-    margin-top: 5%;
-  }
-  
-  .card {
-    background-color: rgb(192, 188, 188);
-    box-shadow: 2px 2px 5px #999;
-    -moz-box-shadow: 2px 2px 5px #999;
-    border-radius: 10px;
-    padding: 5%;
-    margin-top: 1%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    margin-bottom: 1%;
-  }
-  
-  .card-text {
-    text-align: left;
-    margin-top: 3%;
-  }
-  
-  .grid div img {
-    margin-bottom: 7%;
-    border-radius: 6px;
-    width: 100%;
-    margin-left: 2%;
-  }
-  
-  .grid div p {
-    margin-top: 7%;
-    font-size: 90%;
-  }
-  
-  .grid div p b {
-    font-size: 110%;
-  }
-  
-  .grid form button {
-    display: block;
-    width: 52%;
-    height: 30%;
-    background-color: #0d6efd;
-    border-color: rgb(255, 255, 255);
-    color: rgba(255, 255, 255, 0.89);
-    border-radius: 10px;
-    border: 0ch;
-    margin-top: 38%;
-    margin-left: 185%;
-  }
-  
-  .grid form button a {
-    text-decoration: none;
-    color: rgba(255, 250, 250, 0.89);
-  }
-  
-  h2 {
-    display: block;
-    margin-top: 10%;
-    text-align: center;
-    color: rgb(126, 124, 124);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 170%;
-  }
-  
-  .nuestrosclientes {
-    margin-top: 8%;
-  }
-  
-  h3 {
-    display: block;
-    text-align: center;
-    color: rgb(126, 124, 124);
-    font-size: 170%;
-  }
-  
-  .reseñas {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 35% 35%;
-    grid-template-rows: 50% 50% ;
-    grid-column-gap: -300%;
-    grid-row: -300%;
-    margin-top: 5%;
-    margin-left: 6%;
-  }
-  
-  .reseñas div p {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 95%;
-    margin-top: 4%;
-    color: aliceblue;
-  }
-  
-  /* NOSOTROS */
-  .nosotros div {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 60%;
-    grid-column-gap: 2%;
-    margin-left: 3%;
-  }
-  .nosotros div p {
-    display: block;
-    margin-top: 10%;
-    text-align: left;
-    color: rgb(100, 99, 99);
-    line-height: 25pt;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  .nosotros div p b {
-    font-size: 120%;
-  }
-  .nosotros div img {
-    display: block;
-    justify-items: center;
-    margin-top: 10%;
-    width: 80%;
-    height: 140%;
-  }
-  
-  p {
-    display: block;
-    margin-top: 10%;
-    margin-left: 4%;
-    text-align: center;
-    color: rgb(75, 74, 74);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  p b {
-    font-size: 170%;
-  }
-  
-  .equipo {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 22% 22% 22%;
-    grid-template-rows: 100%;
-    grid-column-gap: 5%;
-    grid-row-gap: 1%;
-    margin-top: 4%;
-  }
-  .equipo div div h5 {
-    text-align: center;
-  }
-  .equipo div img {
-    justify-content: center;
-    border-radius: 30px;
-    margin-left: 20%;
-  }
-  .equipo div p {
-    margin-top: 4%;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  .equipo div p b {
-    font-size: 100%;
-  }
-  
-  @-webkit-keyframes cambiaColor {
-    0% {
-      background: rgb(0, 0, 0);
-    }
-    100% {
-      background: #dfdfe0;
-    }
-  }
-  
-  @keyframes cambiaColor {
-    0% {
-      background: rgb(0, 0, 0);
-    }
-    100% {
-      background: #dfdfe0;
-    }
-  }
-  .contactate button {
-    display: block;
-    width: 10%;
-    height: 60%;
-    background-color: #0d6efd;
-    border-color: rgb(199, 196, 196);
-    color: rgba(255, 253, 253, 0.89);
-    border-radius: 10px;
-    border: 0ch;
-    margin-left: 45%;
-    margin-top: 7%;
-  }
-  .contactate button a {
-    text-decoration: none;
-    color: rgba(255, 250, 250, 0.89);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  .contactate button:hover {
-    background-color: rgb(73, 73, 73);
-  }
-  
-  .nuestrosvehiculos {
-    display: block;
-    margin-top: 4%;
-    text-align: center;
-    color: rgb(126, 124, 124);
-  }
-  
-  .nuestrosvehiculos div p {
-    margin-top: 4%;
-    text-align: center;
-    color: rgb(100, 99, 99);
-    line-height: 25pt;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  
-  .nuestrosvehiculos div p b {
-    font-size: 170%;
-  }
-  
-  .losvehiculos {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 15% 15% 15% 15%;
-    grid-template-rows: 47% 47%;
-    grid-column-gap: 3%;
-    grid-row-gap: 3% ;
-  }
-  
-  .losvehiculos div {
-    background-color: rgb(185, 185, 185);
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 6%;
-    margin-top: 2%;
-  }
-  
-  .card-img-top {
-    border-radius: 10px;
-    margin-bottom: 1%;
-    width: 110%;
-    margin-right: 1%;
-    margin-left: -2%;
-  }
-  
-  .losvehiculos div p {
-    margin-top: 1%;
-    font-size: 80%;
-  }
-  
-  .losvehiculos div p b {
-    font-size: 130%;
-  }
-  
-  .card-body button {
-    display: block;
-    width: 60%;
-    height: 30px;
-    background-color:#0d6efd;
-    border-color: rgb(199, 196, 196);
-    color: rgba(236, 236, 236, 0.89);
-    border-radius: 10px;
-    border: 0ch;
-    margin-left: 4%;
-    margin-top: 10%;
-    font-size: 90%;
-  }
-  
-  .card-body button a {
-    text-decoration: none;
-    color: rgba(255, 250, 250, 0.89);
-  }
-  
-  .losvehiculos form button {
-    display: block;
-    width: 60%;
-    height: 80%;
-    background-color:#0d6efd;
-    border-color: rgb(199, 196, 196);
-    color: rgba(236, 236, 236, 0.89);
-    border-radius: 10px;
-    border: 0ch;
-    margin-left: 200%;
-    margin-top: 15%;
-  }
-  
-  .losvehiculos form button a {
-    text-decoration: none;
-    color: rgba(255, 250, 250, 0.89);
-  }
-  
-  /* PRODUCTO */
-  .producto {
-    margin-top: 8%;
-    margin-bottom: 3%;
-    text-align: center;
-    color: rgb(100, 99, 99);
-    line-height: 25pt;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  
-  .producto b {
-    font-size: 170%;
-  }
-  
-  .elproducto {
-    width: 90%;
-    height: 210%;
-    display: grid;
-    grid-template-areas: "galeria info" "descripción info";
-    justify-content: center;
-    background-color: rgb(185, 185, 185);
-    border-radius: 20px;
-    margin-bottom: 5%;
-    margin-left: 4%;
-    padding: 1%;
-  
-  }
-  
-  .galeria {
-    grid-area: galeria;
-    height: calc(var(--h) + 3em);
-    width: var(--w);
-    margin: 1em;
-    position: relative;
-    display: inline-block;
-    margin: auto;
-    display: block;
-    margin-top: 1%;
-    border-radius: 20px;
-    background-color: rgb(185, 185, 185);
-    --w:50%;
-    --h:20%;
-    margin-left: 1%;
-    padding: 5%;
-  }
-  
-  .galeria img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 3s;
-    background-color: rgb(233, 233, 233);
-    border-radius: 20px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    justify-content: left;
-    width: 850%;
-    height: 260%;
-  }
-  
-  .galeria input[type=radio] {
-    position: relative;
-    bottom: calc(-1 * var(--h) - 1em);
-    left: 1.5em;
-  }
-  
-  .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
-    opacity: 1;
-  }
-  
-  .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
-    opacity: 1;
-  }
-  
-  .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
-    opacity: 1;
-  }
-  
-  .galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
-    opacity: 1;
-  }
-  
-  .galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
-    opacity: 1;
-  }
-  
-  .descripción {
-    margin: auto;
-    margin-left: 50%;
-    margin-top: 1%;
-    margin-right: 50%;
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  
-  .descripción fieldset {
-   border: 0ch;
-  }
-  
-  .descripción fieldset p {
-    font-size: 120%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  
-  .descripción fieldset p b {
-    font-size: 120%;
-  
-  }
-  
-  
-  
-  /* FINANCIACIÓN */
-  .financiacion div {
-    display: block;
-    grid-row-gap: 4%;
-    margin: 5%;
-  }
-  
-  .financiacion div p {
-    display: block;
-    margin-top: 8%;
-    text-align: left;
-    color: rgb(100, 99, 99);
-    line-height: 25pt;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  
-  .financiacion div p b {
-    font-size: 170%;
-  }
-  
-  .creditobancor {
-    display: grid;
-    margin-left: 10%;
-    margin-top: 6%;
-    text-align: center;
-  }
-  
-  .creditobancor div {
-    background-color: rgb(185, 185, 185);
-    color: rgb(0, 0, 0);
-    border-radius: 50px;
-    margin-top: 2%;
-    box-shadow: 2px 2px 5px #999;
-    -moz-box-shadow: 2px 2px 5px #999;
-    width: 82%;
-  }
-  
-  .creditobancor p {
-    display: block;
-    margin-top: 3%;
-    text-align: center;
-    color: rgb(100, 99, 99);
-    line-height: 25pt;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    margin-right: 4%;
-  }
-  
-  .creditobancor p b {
-    font-size: 150%;
-  }
-  
-  .creditobancor img {
-    border-radius: 50px;
-    width: 90%;
-  }
-  
-  .creditosantander {
-    display: grid;
-    margin-left: 10%;
-    margin-top: 6%;
-    text-align: center;
-  }
-  
-  .creditosantander div {
-    background-color: rgb(185, 185, 185);
-    color: rgb(0, 0, 0);
-    border-radius: 50px;
-    margin-top: 2%;
-    box-shadow: 2px 2px 5px #999;
-    -moz-box-shadow: 2px 2px 5px #999;
-    width: 82%;
-  }
-  
-  .creditosantander p {
-    display: block;
-    margin-top: 3%;
-    text-align: center;
-    color: rgb(100, 99, 99);
-    line-height: 25pt;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    margin-right: 4%;
-  }
-  
-  .creditosantander img {
-    border-radius: 50px;
-    width: 90%;
-  }
-  
-  .creditosantander p b {
-    font-size: 150%;
-  }
-  
-  /* CONTACTAR ASESOR*/
-  aside div {
-    background-color: rgb(241, 238, 238);
-    border-radius: 50px;
-    padding: 5%;
-    margin-top: 4%;
-    width: 600px;
-    height: 1800;
-    margin-left: 340px;
-    box-shadow: 2px 2px 5px #999;
-    -moz-box-shadow: 2px 2px 5px #999;
-  }
-  
-  aside div form {
-    margin-top: 5%;
-    text-align: center;
-    font-size: 140%;
-  }
-  
-  aside div form legend {
-    display: block;
-    margin-top: 25px;
-    text-align: center;
-    color: rgb(75, 74, 74);
-    font-size: 120%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  
-  aside div form label {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 90%;
-    color: rgb(75, 74, 74);
-    margin-top: 2%;
-  }
-  
-  aside div form input {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 90%;
-    margin-top: 2%;
-    color: rgb(32, 32, 32);
-    background-color: #d4d4d4;
-    text-align: left;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  aside div form span {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 90%;
-    margin-top: 2%;
-    color: rgb(75, 74, 74);
-  }
-  
-  aside div form select {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 90%;
-    margin-top: 2%;
-    color: rgb(151, 148, 148);
-    background-color: #d4d4d4;
-  }
-  
-  aside div form p {
-    margin-top: 2%;
-    text-align: center;
-    margin-left: 4%;
-    margin-right: 4%;
-    font-size: 90%;
-  }
-  
-  .escribeaqui {
-    width: 40%;
-    height: 50%;
-  }
-  
-  .botonenviar {
-    width: 20%;
-    height: 100%;
-    background-color: rgb(126, 124, 124);
-    border-color: rgb(199, 196, 196);
-    color: rgba(236, 236, 236, 0.89);
-    border-radius: 10px;
-    border: 0ch;
-    margin-top: 4%;
-    text-align: center;
-  }
-  
-  .dondeencontrarnos {
-    display: block;
-    margin-top: 4%;
-    text-align: center;
-    color: rgb(75, 74, 74);
-    font-size: 120%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  
-  iframe {
-    margin-left: 30%;
-    border: 0;
-  }
+.logofooter {
+  margin-left: 40%;
+  margin-top: 8%;
+  height: 22%;
+  width: 22%;
+  margin-bottom: 5%;
+}
+
+/* NOSOTROS */
+.nosotros div {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 95%;
+  grid-template-rows: 60% 60%;
+  grid-column-gap: 2%;
+  margin-left: 3%;
+}
+.nosotros div p {
+  display: block;
+  margin-top: 15%;
+  text-align: left;
+  color: rgb(100, 99, 99);
+  line-height: 20pt;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.nosotros div p b {
+  font-size: 170%;
+}
+.nosotros div img {
+  display: block;
+  justify-items: center;
+  margin-top: 10%;
+  width: 90%;
+  height: 60%;
+}
+
+p {
+  display: block;
+  margin-top: 25%;
+  margin-left: 7%;
+  text-align: left;
+  color: rgb(75, 74, 74);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+p b {
+  font-size: 170%;
+}
+
+.equipo {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 95%;
+  grid-template-rows: 35% 30% 30%;
+  grid-column-gap: 5%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.equipo div div h5 {
+  text-align: center;
+}
+.equipo div img {
+  justify-content: center;
+  border-radius: 30px;
+  margin-left: -5%;
+}
+.equipo div p {
+  margin-top: 2%;
+  margin-left: -2%;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.equipo div p b {
+  font-size: 100%;
+}
+
+@-webkit-keyframes cambiaColor {
+  0% {
+    background: rgb(0, 0, 0);
+  }
+  100% {
+    background: #dfdfe0;
+  }
+}
+
+@keyframes cambiaColor {
+  0% {
+    background: rgb(0, 0, 0);
+  }
+  100% {
+    background: #dfdfe0;
+  }
+}
+.contactate button {
+  display: block;
+  width: 30%;
+  height: 80%;
+  background-color: #0d6efd;
+  border-color: rgb(199, 196, 196);
+  color: rgba(255, 253, 253, 0.89);
+  border-radius: 10px;
+  border: 0ch;
+  margin-left: 30%;
+  margin-top: 7%;
+}
+.contactate button a {
+  text-decoration: none;
+  color: rgba(255, 250, 250, 0.89);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.contactate button:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+/* VEHICULOS */
+.nuestrosvehiculos {
+  display: block;
+  margin-top: 10%;
+  text-align: center;
+  color: rgb(126, 124, 124);
+}
+
+.nuestrosvehiculos div p {
+  margin-top: 4%;
+  text-align: center;
+  color: rgb(100, 99, 99);
+  line-height: 25pt;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.nuestrosvehiculos div p b {
+  font-size: 170%;
+}
+
+.losvehiculos {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 75% ;
+  grid-template-rows: 12% 12% 13% 13% 13% 13% 13% 12% ;
+  grid-row-gap: 1% ;
+  margin-bottom: 15%;
+  margin-left: 5%;
+}
+
+.losvehiculos div {
+  background-color: rgb(185, 185, 185);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  margin-bottom: 1%;
+  width: 110%;
+  margin-right: 1%;
+  margin-left: -5%;
+}
+
+.card-text {
+  font-size: 130%;
+  width: 100%;
+  margin-top: 2%;
+  margin-left: -2%;
+}
+
+.card-title {
+  font-size: 150%;
+  margin-top: 2%;
+  margin-left: -2%;
+}
+
+.card-body button {
+  display: block;
+  width: 60%;
+  height: 30px;
+  background-color:#0d6efd;
+  border-color: rgb(199, 196, 196);
+  color: rgba(236, 236, 236, 0.89);
+  border-radius: 10px;
+  border: 0ch;
+  margin-left: -2%;
+  margin-top: 10%;
+  font-size: 90%;
+}
+
+.card-body button a {
+  text-decoration: none;
+  color: rgba(255, 250, 250, 0.89);
+}
+
+.losvehiculos form button {
+  display: block;
+  width: 50%;
+  height: 60%;
+  background-color:#0d6efd;
+  border-color: rgb(199, 196, 196);
+  color: rgba(236, 236, 236, 0.89);
+  border-radius: 10px;
+  border: 0ch;
+  margin-left: 20%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+.losvehiculos form button a {
+  text-decoration: none;
+  color: rgba(255, 250, 250, 0.89);
+}
+
+/* PRODUCTO */
+.producto {
+  margin-top: 30%;
+  margin-bottom: 3%;
+  text-align: center;
+  color: rgb(100, 99, 99);
+  line-height: 25pt;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.producto b {
+  font-size: 170%;
+}
+
+.elproducto {
+  width: 90%;
+  height: 210%;
+  display: grid;
+  grid-template-areas: "galeria info" "descripción info";
+  justify-content: center;
+  background-color: rgb(185, 185, 185);
+  border-radius: 20px;
+  margin-bottom: 5%;
+  margin-left: 4%;
+  padding: 1%;
+
+}
+
+.galeria {
+  grid-area: galeria;
+  height: calc(var(--h) + 3em);
+  width: var(--w);
+  margin: 1em;
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  display: block;
+  margin-top: 1%;
+  border-radius: 20px;
+  background-color: rgb(185, 185, 185);
+  --w:50%;
+  --h:20%;
+  margin-left: 1%;
+  padding: 5%;
+}
+
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s;
+  background-color: rgb(233, 233, 233);
+  border-radius: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  justify-content: left;
+  width: 850%;
+  height: 260%;
+}
+
+.galeria input[type=radio] {
+  position: relative;
+  bottom: calc(-1 * var(--h) - 1em);
+  left: 1.5em;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
+  opacity: 1;
+}
+
+.descripción {
+  margin: auto;
+  margin-left: 50%;
+  margin-top: 1%;
+  margin-right: 50%;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+.descripción fieldset {
+ border: 0ch;
+}
+
+.descripción fieldset p {
+  font-size: 120%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.descripción fieldset p b {
+  font-size: 120%;
+
+}
+
+/* CONTACTAR ASESOR*/
+aside div {
+  background-color: rgb(241, 238, 238);
+  border-radius: 50px;
+  padding: 5%;
+  margin-top: 10%;
+  width: 300px;
+  height: 1800;
+  margin-left: 73px;
+  box-shadow: 2px 2px 5px #999;
+  -moz-box-shadow: 2px 2px 5px #999;
+}
+
+aside div form {
+  margin-top: 5%;
+  text-align: center;
+}
+
+aside div form legend {
+  display: block;
+  margin-top: 3%;
+  margin-bottom: -5%;
+  text-align: center;
+  color: rgb(75, 74, 74);
+  font-size: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+aside div form label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 90%;
+  color: rgb(75, 74, 74);
+  margin-top: 2%;
+}
+
+aside div form input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 90%;
+  margin-top: 2%;
+  color: rgb(32, 32, 32);
+  background-color: #d4d4d4;
+  text-align: left;
+  border-radius: 5px;
+  border: none;
+}
+
+aside div form span {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 90%;
+  margin-top: 2%;
+  color: rgb(75, 74, 74);
+}
+
+aside div form select {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 90%;
+  margin-top: 2%;
+  color: rgb(151, 148, 148);
+  background-color: #d4d4d4;
+}
+
+aside div form p {
+  text-align: center;
+  margin-left: 4%;
+  margin-right: 4%;
+  font-size: 60%;
+  margin-bottom: 1%;
+}
+
+.escribeaqui {
+  width: 80%;
+  height: 180%;
+}
+
+.botonenviar {
+  width: 20%;
+  height: 100%;
+  background-color: rgb(126, 124, 124);
+  border-color: rgb(199, 196, 196);
+  color: rgba(236, 236, 236, 0.89);
+  border-radius: 10px;
+  border: 0ch;
+  margin-top: 4%;
+  text-align: center;
+}
+
+.dondeencontrarnos {
+  display: block;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+  color: rgb(75, 74, 74);
+  font-size: 120%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+iframe {
+  margin-left: 12%;
+  border: 0;
+  width: 80%; 
+  height: 20%;
+}
+
+/* PRODUCTO */
+.producto {
+  margin-top: 10%;
+  margin-bottom: 3%;
+  text-align: center;
+  color: rgb(100, 99, 99);
+  line-height: 25pt;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.producto b {
+  font-size: 140%;
+}
+
+.elproducto {
+  width: 90%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 80% 40%;
+  justify-content: center;
+  background-color: rgb(185, 185, 185);
+  border-radius: 20px;
+  margin-bottom: 5%;
+  margin-left: 6%;
+  padding: 1%;
+}
+
+.galeria {
+  grid-area: galeria;
+  height: calc(var(--h) + 3em);
+  width: var(--w);
+  margin: 1em;
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  display: block;
+  margin-top: 1%;
+  border-radius: 20px;
+  background-color: rgb(185, 185, 185);
+  --w:50%;
+  --h:20%;
+  margin-left: 15%;
+  padding: 5%;
+}
+
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s;
+  background-color: rgb(233, 233, 233);
+  border-radius: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  justify-content: left;
+  width: 180%;
+  height: 150%;
+}
+
+.galeria input[type=radio] {
+  position: relative;
+  bottom: calc(-1 * var(--h) - 1em);
+  left: 1.5em;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
+  opacity: 1;
+}
+
+.descripción {
+  margin-left: -82%;
+  margin-top: 295%;
+  margin-right: 50%;
+  width: 250%;
+  margin-bottom: 5%;
+}
+
+.descripción fieldset {
+ border: 0ch;
+}
+
+.descripción fieldset p {
+  font-size: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.descripción fieldset p b {
+  font-size: 100%;
+
+}
+
   }/*# sourceMappingURL=style.css.map */
