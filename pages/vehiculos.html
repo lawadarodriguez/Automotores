@@ -5,24 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automotores 4124 - Vehículos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.scss">
 </head>
 <body>
   <header>
-    <div class="container-fluid">
-        <div class="row">
-                <nav>
-                    <img class="logo" src="../assets/images/Automotores Logo-01.png" alt="Logo Automotores 62" width="150px" height="150px"/>
-                    <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="vehiculos.html">Vehículos</a></li>
-                    <li><a href="financiacion.html">Financiación</a></li>
-                    <li><button class="boton"><a href="contactarasesor.html";><b>Contáctar Asesor</b></a></button></li>
-                    </ul>
-                </nav>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../assets/images/Automotores Logo-01.png" alt="Logo Automotores"  width="70" height="28"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="vehiculos.html">Vehículos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="financiacion.html">Financiación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contactarasesor.html">Contáctanos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </div>
+      </nav>
   </header>
     <section class="nuestrosvehiculos">
         <div>
@@ -35,7 +54,7 @@
                 <img src="../assets/images/producto1.jpg" class="card-img-top" alt="producto">
                 <h5 class="card-title">FORD MAVERICK 2.0 4WD LARIAT 2020</h5>
                 <p class="card-text"> Un desenfadado aspecto juvenil, tanto por dentro como por fuera. A ello se suman las llantas de aleación ligera de 16 pulgadas. </p>
-                <button><a href="producto.html">Ver más</a></button>
+                <form><button><a href="producto.html">Ver más</a></button></form>
             </div>
         </div>
 
@@ -44,15 +63,15 @@
                 <img src="../assets/images/producto2.jpg" class="card-img-top" alt="producto">
                 <h5 class="card-title">FIAT CRONOS 1.8 MT PRECISION 2019</h5>
                 <p class="card-text"> Irradia más que nunca la dominancia típica de un SUV, pero sin resultar nunca agresiva.</p>
-                <button><a href="producto.html">Ver más</a></button>
+                <form><button><a href="producto1.html">Ver más</a></button></form>
             </div>
         </div>
         <div class="card">
             <div class="card-body">
                 <img src="../assets/images/producto4.jpg" class="card-img-top" alt="producto">
               <h5 class="card-title">FORD MAVERICK 2.0 4WD LARIAT 2017</h5>
-              <p class="card-text">Automático - airbag - abs - levanta cristales electricos - cierre centralizado - climatizador - faros antiniebla - comando satelital de setero - espejos exteriores electricos - llantas de aleación. En muy buen estado. Financiación completa.</p>
-              <button><a href="producto.html">Ver más</a></button>
+              <p class="card-text">Automático - levanta cristales electricos - cierre centralizado - climatizador - faros antiniebla - comando satelital de setero - espejos exteriores electricos - llantas de aleación. En muy buen estado. Financiación completa.</p>
+              <form><button><a href="producto2.html">Ver más</a></button></form>
             </div>
         </div>
             <div class="card">
@@ -60,7 +79,7 @@
                     <img src="../assets/images/producto3.jpg" class="card-img-top" alt="producto">
                   <h5 class="card-title">FORD MAVERICK 2.0 4WD LARIAT 2015</h5>
                   <p class="card-text">AUTOMÁTICO - AIRBAG - LEVANTA CRISTALES ELECTRICOS - CIERRE CENTRALIZADO - CLIMATIZADOR - FAROS ANTINIEBLA - COMANDO SATELITAL DE SETERO - ESPEJOS EXTERIORES ELECTRICOS - LLANTAS DE ALEACIÓN</p>
-                    <button><a href="producto.html">Ver más</a></button>
+                  <form><button><a href="producto3.html">Ver más</a></button></form>
                 </div>
             </div>
             <div class="card">
@@ -68,7 +87,7 @@
                     <img src="../assets/images/producto5.jpg" class="card-img-top" alt="producto">
                   <h5 class="card-title">CITROEN C4 LOUNGE 1.6 VTI LIVE GNC AÑO 2019</h5>
                   <p class="card-text"> COLOR BLANCO - AIRBAG - FRENOS ABS - CIERRE CENTRALIZADO - LEVANTA CRISTALES ELECTRICOS - CLIMATIZADOR - LLANTAS DE ALEACIÓN - NAVEGADOR</p>
-                    <button><a href="producto.html">Ver más</a></button>
+                  <form><button><a href="producto4.html">Ver más</a></button></form>
                 </div>
             </div>
             <div class="card">
@@ -76,7 +95,7 @@
                     <img src="../assets/images/producto6.jpg" class="card-img-top" alt="producto">
                   <h5 class="card-title">HONDA HRV EX CVT BLANCO 2019</h5>
                   <p class="card-text">EN MUY BUEN ESTADO - FRENOS ABS - COMPUTADORA DE ABORDO - VOLANTE MULTIMEDIA - CAMARA DE RETROCESO- VIDRIO POLARIZADO - BLUETOOTH </p>
-                    <button><a href="producto.html">Ver más</a></button>
+                  <form><button><a href="producto5.html">Ver más</a></button></form>
                 </div>
             </div>
             <div class="card">
@@ -84,7 +103,7 @@
                     <img src="../assets/images/producto7.jpg" class="card-img-top" alt="producto">
                   <h5 class="card-title">VOLKSWAGEN GOL TREND 1.6</h5>
                   <p class="card-text"> 5 PUERTAS COLOR GRIS 2019 - AIRBAG - ABS - LEVANTA CRISTALES ELECTRICOS DELANTEROS - AIRE ACONDICIONADO - PANTALLA MULTIMEDIA - IMPECABLE</p>
-                    <button><a href="producto.html">Ver más</a></button>
+                  <form><button><a href="producto6.html">Ver más</a></button></form>
                 </div>
             </div>
             <div class="card">
@@ -92,11 +111,11 @@
                     <img src="../assets/images/producto8.jpg" class="card-img-top" alt="producto">
                   <h5 class="card-title">NISSAN KICKS SENSE MT 2019</h5>
                   <p class="card-text"> BLANCO GNC 1.6 - FRENOS ABS - AIRBAG - STEREO MP3/CD - LLANTAS DE ALEACIÓN - LEVANTA CRISTALES ELÉCTRICOS - AIRE ACONDICIONADO - IMPERDIBLE - SENSORES DE ESTACIONAMIENTO </p>
-                    <button><a href="producto.html">Ver más</a></button>
+                    <form><button><a href="producto7.html">Ver más</a></button></form>
                 </div>
             </div>
         </div>
-        <form><button><a href="contactarasesor.html"> Contáctar un Asesor</a></button></form>
+        <form><button class="botones"><a href="contactarasesor.html"> Contáctar un Asesor</a></button></form>
     </section>
     <footer>
         <p class= ubicacion> <b>Ubicación</b> <br> Duarte Quirós 2800</br> </p>
@@ -104,5 +123,6 @@
         <p class=email> <b>Contacto</b><br>automotores4124@hotmail.com </br> <br>+54 3516611997</br></p>
         <img class= logofooter src="../assets/images/Automotores Logo-01.png" alt="Logo Automotores 62" width="200" height="200"/>
     </footer>   
+    <script scr="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

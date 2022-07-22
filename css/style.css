@@ -1,97 +1,42 @@
 @charset "UTF-8";
 
+*{ margin: 0; padding: 0; }
 
 body {
   position: absolute;
   width: 100%;
 }
 
-.row nav {
-  background-color: rgb(238, 236, 236);
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  box-shadow: 2px 2px 5px #999;
-  -moz-box-shadow: 2px 2px 5px #999;
-  height: 15%;
-  width: 100%;
-  border: 0ch;
-  padding: 0%;
-  margin: 0%;
-}
-
-.logo {
-  margin-top: 2%;
+.navbar-brand img {
   margin-left: 4%;
-  width: 12%;
-  height: 12%;
   -webkit-animation: Movimiento 4s;
-          animation: Movimiento 4s;
+  animation: Movimiento 4s;
   line-height: 150px;
 }
 
 @-webkit-keyframes Movimiento {
-  0% {
-    transform: translateX(1500px);
-  }
-  50% {
-    transform: translateX(200px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+0% {
+transform: translateX(1500px);
+}
+50% {
+transform: translateX(200px);
+}
+100% {
+transform: translateX(0px);
+}
 }
 
 @keyframes Movimiento {
-  0% {
-    transform: translateX(1500px);
-  }
-  50% {
-    transform: translateX(200px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+0% {
+transform: translateX(1500px);
 }
- nav ul {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  margin-top: 3%;
-  margin-left: 10%;
-  white-space: nowrap;
+50% {
+transform: translateX(200px);
+}
+100% {
+transform: translateX(0px);
 }
 
-nav ul li {
-  width: 35%;
-  display: inline;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 90%;
-  margin-left: 20%;
-  margin-right: 1%;
-  align-items: center;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: rgb(126, 124, 124);
-}
-
-.boton {
-  background-color: rgb(126, 124, 124);
-  border-color: rgb(238, 236, 236);
-  color: rgba(255, 250, 250, 0.89);
-  border-radius: 10px;
-  border: 0ch;
-  width: 32%;
-  height: 120%;
-  text-overflow: ellipsis;
-  overflow: unset;
-  font-size: 90%;
-}
-
-.boton a {
-  text-decoration: none;
-  color: rgba(255, 250, 250, 0.89);
 }
 
 /* INDEX */
@@ -101,17 +46,14 @@ nav ul li a {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  width: 100%;
-  height: 600px;
   box-shadow: 6px 6px 5px #999;
   -moz-box-shadow: 6px 6px 5px #999;
 }
 
 .slogan h1 {
   display: flex;
-  margin-top: 2%;
   margin-left: 4%;
-  padding-top: 10%;
+  padding-top: 8%;
   font-size: 150%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -140,6 +82,7 @@ nav ul li a {
   border-radius: 10px;
   margin-top: 1%;
   margin-left: 4%;
+  margin-bottom: 25%;
 }
 
 .slogan form button a {
@@ -151,10 +94,13 @@ nav ul li a {
   display: grid;
   justify-content: center;
   grid-template-columns: 22% 22% 22% 22%;
-  grid-template-rows: 80%;
+  grid-template-rows: 100%;
   grid-column-gap: 2%;
   grid-row-gap: 1%;
   margin-top: 5%;
+  padding: 1%;
+  word-wrap: break-word;
+  margin-bottom: 5%;
 }
 
 .card {
@@ -162,49 +108,81 @@ nav ul li a {
   box-shadow: 2px 2px 5px #999;
   -moz-box-shadow: 2px 2px 5px #999;
   border-radius: 10px;
-  padding: 5%;
   margin-top: 1%;
+  padding: 5%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.card-body{
+  word-wrap: break-word;
+  margin-bottom: 2%;
+}
+
+.card-text{
+  text-align: left;
+  margin-top: 3%;
   margin-bottom: 1%;
 }
 
-.card-text {
-  text-align: left;
-  margin-top: 3%;
-}
-
-.grid div img {
+.card-body img {
   margin-bottom: 7%;
   border-radius: 6px;
   width: 100%;
-  margin-left: 2%;
+  padding: 2%;
 }
 
-.grid div p {
+.card-body p {
   margin-top: 7%;
   font-size: 90%;
 }
 
-.grid div p b {
+.card-body p b {
   font-size: 110%;
 }
 
-.grid form button {
+.card-body form button {
   display: block;
-  width: 52%;
-  height: 30%;
+  width: 30%;
+  height: auto;
   background-color: #0d6efd;
   border-color: rgb(255, 255, 255);
   color: rgba(255, 255, 255, 0.89);
   border-radius: 10px;
   border: 0ch;
-  margin-top: 38%;
-  margin-left: 185%;
+  white-space: nowrap;
 }
 
-.grid form button a {
+
+.card-body form button a {
   text-decoration: none;
   color: rgba(255, 250, 250, 0.89);
+  font-size: 100%;
+}
+
+.botones{
+  display: block;
+  margin-left: 45%;
+  width: 10%;
+  height: 30%;
+  margin-top: 3%;
+}
+.botones button{
+
+  background-color: #0d6efd;
+  border-color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.89);
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+}
+
+.botones a {
+  text-decoration: none;
+  color: rgba(255, 250, 250, 0.89);
+  margin-bottom: 2%;
+  white-space: nowrap;
 }
 
 h2 {
@@ -217,7 +195,7 @@ h2 {
 }
 
 .nuestrosclientes {
-  margin-top: 8%;
+  margin-top: 10%;
 }
 
 h3 {
@@ -232,10 +210,10 @@ h3 {
   justify-content: center;
   grid-template-columns: 35% 35%;
   grid-template-rows: 50% 50% ;
-  grid-column-gap: -300%;
-  grid-row: -300%;
+  grid-column-gap: 1%;
+  grid-row: 10%;
   margin-top: 5%;
-  margin-left: 6%;
+  margin-left: 8%;
 }
 
 .reseñas div p {
@@ -270,7 +248,7 @@ h3 {
   display: block;
   justify-items: center;
   margin-top: 10%;
-  width: 80%;
+  width: 100%;
   height: 140%;
 }
 
@@ -651,22 +629,22 @@ aside div {
   border-radius: 50px;
   padding: 5%;
   margin-top: 4%;
-  width: 600px;
-  height: 1800;
-  margin-left: 340px;
+  width: 60%;
+  height: auto;
   box-shadow: 2px 2px 5px #999;
   -moz-box-shadow: 2px 2px 5px #999;
+  margin-left: 23%;
 }
 
 aside div form {
-  margin-top: 5%;
+  margin-top: 1%;
   text-align: center;
   font-size: 140%;
 }
 
 aside div form legend {
   display: block;
-  margin-top: 25px;
+  margin-top: 1%;
   text-align: center;
   color: rgb(75, 74, 74);
   font-size: 120%;
@@ -711,7 +689,9 @@ aside div form p {
   text-align: center;
   margin-left: 4%;
   margin-right: 4%;
-  font-size: 90%;
+  font-size: 60%;
+  margin-top: 1%;
+
 }
 
 .escribeaqui {
@@ -724,7 +704,7 @@ aside div form p {
   height: 40px;
   background-color: rgb(126, 124, 124);
   border-color: rgb(199, 196, 196);
-  color: rgba(236, 236, 236, 0.89);
+  color: rgba(255, 255, 255, 0.89);
   border-radius: 10px;
   border: 0ch;
   margin-top: 4%;
@@ -796,73 +776,9 @@ footer {
 
 /* MOBILE */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 850px) {
 
-  .row nav {
-    background-color: rgb(238, 236, 236);
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    box-shadow: 2px 2px 5px #999;
-    -moz-box-shadow: 2px 2px 5px #999;
-    height: 25%;
-    width: 100%;
-    border: 0ch;
-    padding: 0%;
-    margin: 0%;
-  }
-  
-  .logo {
-    margin-top: 2.5%;
-    margin-left: 5%;
-    width: 18%;
-    height: 22%;
-    -webkit-animation: Movimiento 4s;
-            animation: Movimiento 4s;
-    line-height: 150px;
-  }
-  
- nav ul {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-top: 3%;
-    margin-left: -4%;
-    white-space: nowrap;
-  }
-  
-  nav ul li {
-    width: 35%;
-    display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70%;
-    margin-left: 1%;
-    margin-right: 2%;
-    color: rgb(126, 124, 124);
-    align-items: center;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: rgb(126, 124, 124);
-  }
- 
-  .boton {
-    background-color: rgb(126, 124, 124);
-    border-color: rgb(238, 236, 236);
-    white-space: nowrap;
-    border-radius: 10px;
-    border: 0ch;
-    width: 30%;
-    height: 110%;
-    text-overflow: ellipsis;
-    overflow: unset;
-    font-size: 80%;
-  }
-  
-  .boton a {
-    text-decoration: none;
-    color: rgba(255, 250, 250, 0.89);
-  }
+
 /* INDEX */
 .slogan {
   background-image: url(https://fotos.perfil.com/2020/01/08/trim/1280/720/con-el-vision-s-sony-incursiona-en-el-mundo-de-los-autos-853254.jpg);
@@ -871,7 +787,6 @@ footer {
   background-attachment: scroll;
   background-size: cover;
   width: 100%;
-  height: 600px;
   box-shadow: 6px 6px 5px #999;
   -moz-box-shadow: 6px 6px 5px #999;
 }
@@ -919,12 +834,13 @@ footer {
   display: grid;
   justify-content: center;
   grid-template-columns: 75%;
-  grid-template-rows: 23% 23% 23% 23% ;
+  grid-template-rows: auto auto auto auto ;
   grid-row-gap: 1%;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.card {
+.card{
   background-color: rgb(192, 188, 188);
   box-shadow: 2px 2px 5px #999;
   -moz-box-shadow: 2px 2px 5px #999;
@@ -932,47 +848,31 @@ footer {
   padding: 5%;
   margin-top: 1%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-bottom: 1%;
 }
+
 
 .card-text {
   text-align: left;
   margin-top: 3%;
 }
 
-.grid div img {
-  margin-bottom: 7%;
+.card-body img {
   border-radius: 6px;
-  width: 100%;
-  margin-left: 2%;
+  width: 110%;
   margin-top: 1%;
 }
 
-.grid div p {
+.card-body p {
   margin-top: 7%;
   font-size: 90%;
 }
 
-.grid div p b {
+.card-body p b {
   font-size: 110%;
 }
 
-.grid form button {
-  display: block;
-  width: 52%;
-  height: 30%;
-  background-color: #0d6efd;
-  border-color: rgb(255, 255, 255);
-  color: rgba(255, 255, 255, 0.89);
-  border-radius: 10px;
-  border: 0ch;
-  margin-top: 38%;
-  margin-left: 185%;
-}
-
-.grid form button a {
-  text-decoration: none;
-  color: rgba(255, 250, 250, 0.89);
+.botones{
+  margin-top: 25%;
 }
 
 h2 {
@@ -982,10 +882,6 @@ h2 {
   color: rgb(126, 124, 124);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 170%;
-}
-
-.nuestrosclientes {
-  margin-top: 2%;
 }
 
 h3 {
@@ -1000,10 +896,8 @@ h3 {
   justify-content: center;
   grid-template-columns: 75%;
   grid-template-rows: 25% 25% 25% 25%;
-  grid-column-gap: -300%;
-  grid-row: -300%;
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 .reseñas div p {
@@ -1084,8 +978,6 @@ footer {
   display: block;
   justify-items: center;
   margin-top: 10%;
-  width: 90%;
-  height: 60%;
 }
 
 p {
@@ -1372,11 +1264,6 @@ p b {
 aside div {
   background-color: rgb(241, 238, 238);
   border-radius: 50px;
-  padding: 5%;
-  margin-top: 10%;
-  width: 300px;
-  height: 1800;
-  margin-left: 73px;
   box-shadow: 2px 2px 5px #999;
   -moz-box-shadow: 2px 2px 5px #999;
 }
@@ -1392,7 +1279,7 @@ aside div form legend {
   margin-bottom: -5%;
   text-align: center;
   color: rgb(75, 74, 74);
-  font-size: 100%;
+  font-size: 80%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -1431,9 +1318,10 @@ aside div form select {
 
 aside div form p {
   text-align: center;
+  margin-top: 4%;
   margin-left: 4%;
   margin-right: 4%;
-  font-size: 60%;
+  font-size: 50%;
   margin-bottom: 1%;
 }
 
