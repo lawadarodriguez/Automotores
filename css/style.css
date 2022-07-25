@@ -99,7 +99,7 @@ body {
 }
 
 .card {
-  background-color: rgba(255, 250, 250, 0.89);
+  background-color: #b9b9b9;
   box-shadow: 2px 2px 5px #999;
   -moz-box-shadow: 2px 2px 5px #999;
   border-radius: 10px;
@@ -241,7 +241,7 @@ p {
   margin-top: 10%;
   margin-left: 3%;
   text-align: center;
-  color: #999;
+  color: rgb(68, 67, 67);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 p b {
@@ -309,8 +309,8 @@ p b {
   margin-bottom: 10%;
 }
 .losvehiculos div {
-  background-color: rgb(0, 0, 0);
-  color: rgb(185, 185, 185);
+  background-color: #b9b9b9;
+  color: rgb(68, 67, 67);
   border-radius: 10px;
   padding: 8%;
   margin-top: 2%;
@@ -374,8 +374,8 @@ p b {
   text-align: center;
 }
 .creditobancor div {
-  background-color: rgb(185, 185, 185);
-  color: rgb(185, 185, 185);
+  background-color: #b9b9b9;
+  color: #b9b9b9;
   border-radius: 50px;
   margin-top: 2%;
   box-shadow: 2px 2px 5px #999;
@@ -386,7 +386,7 @@ p b {
   display: block;
   margin-top: 3%;
   text-align: center;
-  color: rgb(54, 53, 53);
+  color: rgb(68, 67, 67);
   line-height: 25pt;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-right: 4%;
@@ -406,8 +406,8 @@ p b {
   text-align: center;
 }
 .creditosantander div {
-  background-color: rgb(185, 185, 185);
-  color: rgb(185, 185, 185);
+  background-color: #b9b9b9;
+  color: #b9b9b9;
   border-radius: 50px;
   margin-top: 2%;
   box-shadow: 2px 2px 5px #999;
@@ -418,7 +418,7 @@ p b {
   display: block;
   margin-top: 3%;
   text-align: center;
-  color: rgb(54, 53, 53);
+  color: rgb(68, 67, 67);
   line-height: 25pt;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-right: 4%;
@@ -433,7 +433,7 @@ p b {
 
 /* CONTACTAR ASESOR*/
 aside div {
-  background-color: rgb(185, 185, 185);
+  background-color: rgba(236, 236, 236, 0.89);
   border-radius: 50px;
   padding: 5%;
   margin-top: 4%;
@@ -459,10 +459,11 @@ aside div form legend {
 aside div form label {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 90%;
-  color: #999;
+  color: rgb(68, 67, 67);
   margin-top: 2%;
 }
 aside div form input {
+  width: 95%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 90%;
   margin-top: 2%;
@@ -495,8 +496,8 @@ aside div form p {
 }
 
 .escribeaqui {
-  width: 40%;
-  height: 50%;
+  width: 80%;
+  height: auto;
 }
 
 .botonenviar {
@@ -631,7 +632,7 @@ footer {
     margin-bottom: 5%;
   }
   .card {
-    background-color: rgba(255, 250, 250, 0.89);
+    background-color: #b9b9b9;
     box-shadow: 2px 2px 5px #999;
     -moz-box-shadow: 2px 2px 5px #999;
     border-radius: 10px;
@@ -761,7 +762,7 @@ footer {
     display: block;
     margin-top: 15%;
     text-align: left;
-    color: #0d6efd;
+    color: #999;
     line-height: 20pt;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     margin-bottom: 3%;
@@ -829,7 +830,7 @@ footer {
   .nuestrosvehiculos div p {
     margin-top: 2%;
     text-align: center;
-    color: #0d6efd;
+    color: #999;
     line-height: 25pt;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
@@ -839,6 +840,7 @@ footer {
   .losvehiculos {
     display: grid;
     justify-content: center;
+    overflow: scroll;
     grid-template-columns: 75%;
     grid-template-rows: 13% 13% 13% 13% 13% 12% 12% 12%;
     grid-row-gap: 1%;
@@ -846,8 +848,8 @@ footer {
     margin-left: 5%;
   }
   .losvehiculos div {
-    background-color: rgb(0, 0, 0);
-    color: rgb(185, 185, 185);
+    background-color: #b9b9b9;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
   }
   .card-img-top {
@@ -870,7 +872,6 @@ footer {
   }
   /* CONTACTAR ASESOR*/
   aside div {
-    background-color: rgba(255, 250, 250, 0.89);
     border-radius: 50px;
     box-shadow: 2px 2px 5px #999;
     -moz-box-shadow: 2px 2px 5px #999;
@@ -891,7 +892,7 @@ footer {
   aside div form label {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 90%;
-    color: #999;
+    color: rgb(68, 67, 67);
     margin-top: 2%;
   }
   aside div form input {
@@ -926,13 +927,11 @@ footer {
     margin-bottom: 1%;
   }
   .escribeaqui {
-    width: 80%;
-    height: 180%;
+    width: 100%;
   }
   .botonenviar {
     width: 45%;
     height: 35px;
-    background-color: #999;
     border-color: rgb(199, 196, 196);
     color: rgba(236, 236, 236, 0.89);
     border-radius: 10px;
